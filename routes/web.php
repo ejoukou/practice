@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UpdateJsonController;
-use App\Http\Controllers\ShowJsonController;
+use App\Http\Controllers\RowsController;
 
-Route::get('/', [UpdateJsonController::class, 'create'])->name('main.index');
-//Route::get('/', [ShowJsonController::class, 'index'])->name('main.index');
+Route::get('/', RowsController::class)->name('json.index');

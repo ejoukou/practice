@@ -5,8 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ParseJson extends Model
+class Rows extends Model
 {
     protected $guarded = false;
+    public $incrementing = false;
     use HasFactory;
 }
